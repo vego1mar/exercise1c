@@ -22,10 +22,16 @@
 				pattern="[%p] %d [%t] %x %c %M - %m%n" />
 		</Console>
 	</Appenders>
+	
 	<Loggers>
 		<Root level="info" additivity="false">
 			<appender-ref ref="console" level="info"/>
             <appender-ref ref="file-log" level="info" />
 		</Root>
+		<Root level="debug" additivity="false">
+			<appender-ref ref="console" level="debug"/>
+			<appender-ref ref="file-log" level="debug" />
+		</Root>
 	</Loggers>
+	
 </Configuration>
